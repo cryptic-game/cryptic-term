@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Frontend mit Terminal</title>
+    <link rel="stylesheet" href="css/master.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/command.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="line" v-for="line in lines" v-bind:class="line.type">
+        {{line.text}}
+      </div>
+      <div class="line" id="prompt">
+        {{ps + ' '}}
+        <input type="text" id="cmd" autofocus>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

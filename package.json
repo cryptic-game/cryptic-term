@@ -1,0 +1,9 @@
+{
+  "name": "shell-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "electron": "^4.0.4"
+  }
+}
