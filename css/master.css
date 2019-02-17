@@ -1,63 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
 
 html, body {
-  padding: 0;
+  padding: 5pt 0;
   margin: 0;
-  background-color: rgb(33,33,33);
+  background-color: #1a1a1d;
   font-family: 'Space Mono', monospace;
-  color: #058f36;
-  font-size: 1.3rem;
+  color: #28B21E;
+  font-size: 16pt;
 }
-
-* {
-/*  user-select: none;*/
-}
-
-*:focus {
-  outline: none;
-}
-
 
 .line {
-  width: 99%;
-  padding: 0.5%;
+  padding-left: 10pt;
+  white-space: nowrap;
 }
 
-.line #char {
-  font-weight: bold;
-  float: left;
-  width: 2.5%;
-  margin-right: 1pt;
+.msg-log {
+  color: #CDD3EC;
 }
 
-.line #cmd {
+.msg-success {
+  color: #7BEF45;
+}
+
+.msg-warning {
+  color: #DAB83F;
+}
+
+.msg-error {
+  color: #D82424;
+}
+
+#cmd {
+  padding: 0;
   background: transparent;
   border: none;
   outline: none;
   color: inherit;
   font-size: inherit;
   font-family: inherit;
-  max-width: 100%;
 }
 
-.command {
+#cmd:active {
+  width: auto;
 }
 
-.log {
-  color: white;
-}
-
-.warning {
-  color: orange;
-  font-weight: bold;
-}
-
-.error {
-  color: red;
-  font-weight: bold;
-}
-
-.success {
-  color: green;
-  font-weight: bold;
+#cmd:focus {
+  outline: none;
 }
