@@ -8,16 +8,20 @@
       crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"
       crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/command.js"></script>
+    <script type="text/javascript" src="js/shell.js"></script>
+    <script type="text/javascript" src="js/terminal.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/api.js"></script>
+    <script type="text/javascript" src="js/commands.js"></script>
   </head>
   <body>
     <div id="app">
       <div class="line" v-for="line in lines" v-bind:class="line.type">
-        {{line.text}}
+        <span>{{line.text}}</span>
       </div>
       <div class="line" id="prompt">
-        {{ps + ' '}}
-        <input type="text" id="cmd" autofocus>
+        <span id="ps">{{ps}}</span>
+        <input type="text" id="cmd" autofocus autocomplete="off" spellcheck="false">
       </div>
     </div>
     <script src="js/main.js"></script>
